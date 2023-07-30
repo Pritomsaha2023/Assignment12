@@ -1,0 +1,73 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.body{
+	font-family: monospace;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: monospace;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.wrapper{
+	width: 100%;
+	padding: 80px 0px;
+}
+.filter{
+	width: 70%;
+	margin: 0px auto 40px;
+	text-align: center;
+}
+.btn-info{
+	padding: 12px 32px;
+	background: #08c;
+	color: #fff;
+	border: 1px solid #08c;
+	border-radius: 2px;
+	margin: 0px 5px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.filter .btn-info: hover, .filter .btn-info:focus{
+	background: transparent;
+	color: #08c;
+	border: 1px solid #08c;
+	box-shadow: 1px 3px 8px #ccc;
+}
+.portfolio .item{
+	width: 100%;
+	position: relative;
+}
+.item-hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 136, 204, .8);
+	text-align: center;
+	transform: scale(0);
+	transition: 0.3s;
+}
+.portfolio .item:hover .item-hover{
+	transform: scale(1);
+}
+.item-hover .fa{
+	font-size: 60px;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	padding-left: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+}
